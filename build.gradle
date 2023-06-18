@@ -12,16 +12,19 @@ compileJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://nexus.edpn.io'
+    }
 }
 
 ext {
-    edpnBackendUtilVersion = '0.0.1-SNAPSHOT'
+    backendUtilVersion = '0.0.1-SNAPSHOT'
     jacksonVersion = '2.14.2'
     lombokVersion = '1.18.28'
 }
 
 dependencies {
-    implementation "io.edpn.backend:backend-util:${edpnBackendUtilVersion}"
+    implementation "io.edpn.backend:backend-util:${backendUtilVersion}"
     implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
     implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
     implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
