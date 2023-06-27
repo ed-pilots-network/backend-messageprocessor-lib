@@ -1,4 +1,4 @@
-module edpn.backend.messageprocessor.lib {
+module edpn.backend.messageprocessorlib {
     requires lombok;
     requires com.fasterxml.jackson.annotation;
     requires com.fasterxml.jackson.databind;
