@@ -7,7 +7,7 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-public interface ApproachSettlement {
+public interface ApproachSettlementMessage {
 
     class V1 implements withMessageTimestamp {
         @JsonProperty("$schemaRef")
