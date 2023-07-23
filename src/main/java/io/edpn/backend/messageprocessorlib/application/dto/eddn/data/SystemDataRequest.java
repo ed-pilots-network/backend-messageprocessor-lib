@@ -7,6 +7,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class SystemDataRequest {
 
+    @JsonProperty("requestingModule")
+    private String requestingModule;
     @JsonProperty("systemName")
     private String systemName;
 
@@ -17,9 +19,16 @@ public class SystemDataRequest {
         return this.systemName;
     }
 
-    @JsonProperty("systemName")
     public void setSystemName(String systemName) {
         this.systemName = systemName;
+    }
+
+    public String getRequestingModule() {
+        return requestingModule;
+    }
+
+    public void setRequestingModule(String requestingModule) {
+        this.requestingModule = requestingModule;
     }
 
     @Override
@@ -30,18 +39,19 @@ public class SystemDataRequest {
 
         SystemDataRequest that = (SystemDataRequest) o;
 
-        return new EqualsBuilder().append(systemName, that.systemName).isEquals();
+        return new EqualsBuilder().append(systemName, that.systemName).append(requestingModule, that.requestingModule).isEquals();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder(17, 37).append(systemName).toHashCode();
+        return new HashCodeBuilder(17, 37).append(systemName).append(requestingModule).toHashCode();
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
                 .append("systemName", systemName)
+                .append("requestingModule", requestingModule)
                 .toString();
     }
 }
