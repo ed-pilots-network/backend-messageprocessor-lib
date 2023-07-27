@@ -26,6 +26,7 @@ ext {
     backendUtilVersion = '0.0.1-SNAPSHOT'
     jacksonVersion = '2.14.2'
     commonsLang3Version = '3.12.0'
+    junitJupiterVersion = '5.9.3'
 }
 
 dependencies {
@@ -35,6 +36,7 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
     implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
     implementation "org.apache.commons:commons-lang3:${commonsLang3Version}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitJupiterVersion}"
 }
 
 
@@ -73,6 +75,7 @@ publishing {
     publications {
         backendUtil(MavenPublication) {
             from components.java
+            artifact testJar
             versionMapping {
                 usage('java-api') {
                     fromResolutionOf('runtimeClasspath')
