@@ -49,10 +49,10 @@ configurations {
     }
 }
 
-tasks.register('testJar', Jar) {
-    dependsOn testClasses
-    archiveClassifier = 'test'
-    from sourceSets.test.allSource
+task testJar(type: Jar, dependsOn: testClasses) {
+  description = 'Packages test classes and resources.'
+  archiveClassifier = 'test'
+  from sourceSets.test.output
 }
 
 tasks.named('test') {
