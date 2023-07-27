@@ -49,8 +49,18 @@ configurations {
     }
 }
 
+tasks.register('testJar', Jar) {
+    dependsOn testClasses
+    archiveClassifier = 'test'
+    from sourceSets.test.allSource
+}
+
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+tasks.named('assemble').configure {
+    dependsOn 'testJar'
 }
 
 tasks.withType(JavaCompile).tap {
