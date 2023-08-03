@@ -5,6 +5,7 @@ import io.edpn.backend.util.TimestampConverter;
 import java.time.LocalDateTime;
 
 public interface CommodityMessage {
+
     record V3(
             @JsonProperty("$schemaRef") String schemaRef,
             @JsonProperty("header") EddnMessage.Header header,
@@ -16,7 +17,7 @@ public interface CommodityMessage {
             return TimestampConverter.convertToLocalDateTime(message.timestamp());
         }
 
-        record Payload(
+        public record Payload(
                 @JsonProperty("systemName") String systemName,
                 @JsonProperty("stationName") String stationName,
                 @JsonProperty("marketId") long marketId,
@@ -26,10 +27,9 @@ public interface CommodityMessage {
                 @JsonProperty("economies") Economy[] economies,
                 @JsonProperty("prohibited") String[] prohibited,
                 @JsonProperty("commodities") Commodity[] commodities
-        ) implements EddnMessage.Payload {
-        }
+        ) implements EddnMessage.Payload {}
 
-        record Commodity(
+        public record Commodity(
                 @JsonProperty("name") String name,
                 @JsonProperty("meanPrice") int meanPrice,
                 @JsonProperty("buyPrice") int buyPrice,
@@ -39,13 +39,11 @@ public interface CommodityMessage {
                 @JsonProperty("demand") int demand,
                 @JsonProperty("demandBracket") int demandBracket,
                 @JsonProperty("statusFlags") String[] statusFlags
-        ) {
-        }
+        ) {}
 
         record Economy(
                 @JsonProperty("name") String name,
                 @JsonProperty("proportion") double proportion
-        ) {
-        }
+        ) {}
     }
 }

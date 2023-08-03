@@ -22,7 +22,7 @@ public interface FssSignalDiscoveredMessage {
             return TimestampConverter.convertToLocalDateTime(message.timestamp);
         }
 
-        record Payload(
+        public record Payload(
                 @JsonProperty("StarPos") Double[] starPos,
                 @JsonProperty("StarSystem") String starSystem,
                 @JsonProperty("SystemAddress") Long systemAddress,
@@ -40,7 +40,7 @@ public interface FssSignalDiscoveredMessage {
 
         }
 
-        record Signal(
+        public record Signal(
                 @JsonProperty("IsStation") String isStation,
                 @JsonProperty("SignalName") String signalName,
                 @JsonProperty("SpawningFaction") String spawningFaction,

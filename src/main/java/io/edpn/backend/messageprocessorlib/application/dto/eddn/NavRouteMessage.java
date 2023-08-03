@@ -18,7 +18,7 @@ public interface NavRouteMessage {
             return TimestampConverter.convertToLocalDateTime(message.timestamp);
         }
 
-        record Payload(
+        public record Payload(
                 @JsonProperty("event") String event,
                 @JsonProperty("horizons") boolean horizons,
                 @JsonProperty("odyssey") boolean odyssey,
@@ -26,7 +26,7 @@ public interface NavRouteMessage {
                 @JsonProperty("timestamp") String timestamp
         ) implements EddnMessage.Payload {}
 
-        record Item(
+        public record Item(
                 @JsonProperty("StarClass") String starClass,
                 @JsonProperty("StarPos") Double[] starPos,
                 @JsonProperty("StarSystem") String starSystem,
