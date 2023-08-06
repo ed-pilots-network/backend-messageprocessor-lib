@@ -4,8 +4,9 @@ module edpn.backend.messageprocessorlib {
     requires edpn.backend.util;
 
     exports io.edpn.backend.messageprocessorlib.application.dto.eddn;
-    exports io.edpn.backend.messageprocessorlib.infrastructure.kafka.processor;
     exports io.edpn.backend.messageprocessorlib.application.dto.eddn.data;
+    exports io.edpn.backend.messageprocessorlib.infrastructure.kafka.processor;
 
     opens io.edpn.backend.messageprocessorlib.application.dto.eddn to com.fasterxml.jackson.databind;
+    opens io.edpn.backend.messageprocessorlib.application.dto.eddn.data to com.fasterxml.jackson.databind;
 }
