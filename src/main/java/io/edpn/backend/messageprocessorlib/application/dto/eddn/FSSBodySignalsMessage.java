@@ -22,7 +22,7 @@ public interface FSSBodySignalsMessage {
         }
 
         public record Payload(
-                @JsonProperty("BodyID") int bodyId,
+                @JsonProperty("BodyID") long bodyId,
                 @JsonProperty("BodyName") String bodyName,
                 @JsonProperty("Signals") List<Signal> signals,
                 @JsonProperty("StarPos") double[] starPos,

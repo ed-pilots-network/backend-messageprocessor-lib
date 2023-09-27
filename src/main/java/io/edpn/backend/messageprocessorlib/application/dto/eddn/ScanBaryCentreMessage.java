@@ -22,7 +22,7 @@ public interface ScanBaryCentreMessage {
 
         public record Payload(
                 @JsonProperty("AscendingNode") double ascendingNode,
-                @JsonProperty("BodyID") int bodyID,
+                @JsonProperty("BodyID") long bodyID,
                 @JsonProperty("Eccentricity") double eccentricity,
                 @JsonProperty("MeanAnomaly") double meanAnomaly,
                 @JsonProperty("OrbitalInclination") double orbitalInclination,
