@@ -33,6 +33,7 @@ public interface ApproachSettlementMessage {
                 @JsonProperty("Longitude") long longitude,
                 @JsonProperty("timestamp") String timestamp,
                 @JsonProperty("StationGovernment") String stationGovernment,
+                @JsonProperty("StationAllegiance") String stationAllegiance,
                 @JsonProperty("StationEconomies") Economy[] stationEconomies,
                 @JsonProperty("StationFaction") Faction stationFaction,
                 @JsonProperty("StationServices") String[] stationServices,
