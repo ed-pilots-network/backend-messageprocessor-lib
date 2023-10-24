@@ -1,5 +1,6 @@
 package io.edpn.backend.messageprocessorlib.application.dto.eddn.journal;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.edpn.backend.messageprocessorlib.application.dto.eddn.EddnMessage;
 import io.edpn.backend.messageprocessorlib.application.dto.eddn.TimestampedEddnMessage;
@@ -23,6 +24,7 @@ public interface ScanMessage {
             return TimestampConverter.convertToLocalDateTime(message.timestamp);
         }
         
+        @JsonIgnoreProperties(ignoreUnknown = true)
         public record Payload(
                 //Star or Body
                 @JsonProperty("DistanceFromArrivalLS") Double arrivalDistance,
@@ -30,7 +32,7 @@ public interface ScanMessage {
                 @JsonProperty("WasDiscovered") Boolean discovered,
                 @JsonProperty("WasMapped") Boolean mapped,
                 @JsonProperty("BodyName") String name,
-                @JsonProperty("Body") Long localID,
+                @JsonProperty("BodyID") Long localID,
                 @JsonProperty("Radius") Double radius,
                 @JsonProperty("RotationPeriod") Double rotationPeriod,
                 @JsonProperty("StarPos") Double[] starPos,
@@ -44,7 +46,7 @@ public interface ScanMessage {
                 //Body
                 @JsonProperty("AscendingNode") Double ascendingNode,
                 @JsonProperty("Atmosphere") String atmosphere,
-                @JsonProperty("AtmosphericComposition") List<AtmosphericPercentage> atmosphericComposition,
+                @JsonProperty("AtmosphereComposition") List<AtmosphericPercentage> atmosphereComposition,
                 @JsonProperty("Composition") Map<String, Double> bodyComposition,
                 @JsonProperty("Eccentricity") Double eccentricity,
                 @JsonProperty("Landable") Boolean landable,
@@ -53,7 +55,7 @@ public interface ScanMessage {
                 @JsonProperty("MeanAnomaly") Double meanAnomaly,
                 @JsonProperty("OrbitalInclination") Double orbitalInclination,
                 @JsonProperty("OrbitalPeriod") Double orbitalPeriod,
-                //TODO: Review Map<String, Integer> parents,
+                //TODO @JsonProperty("Parents") @JsonIgnore List<Map<String, Integer>> parents,
                 @JsonProperty("Periapsis") Double periapsis,
                 @JsonProperty("PlanetClass") String planetClass,
                 @JsonProperty("Rings") List<Ring> rings,
@@ -68,6 +70,7 @@ public interface ScanMessage {
                 @JsonProperty("AbsoluteMagnitude") Double absoluteMagnitude,
                 @JsonProperty("Age_MY") Long age,
                 @JsonProperty("Luminosity") String luminosity,
+                @JsonProperty("StarType") String starType,
                 @JsonProperty("StellarMass") Long stellarMass,
                 @JsonProperty("Subclass") Integer subclass
         ) implements EddnMessage.Payload {
