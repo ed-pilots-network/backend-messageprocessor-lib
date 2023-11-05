@@ -41,9 +41,6 @@ public interface CommodityMessage {
                 @JsonProperty("statusFlags") String[] statusFlags
         ) {}
 
-        record Economy(
-                @JsonProperty("name") String name,
-                @JsonProperty("proportion") double proportion
-        ) {}
     }
+
 }

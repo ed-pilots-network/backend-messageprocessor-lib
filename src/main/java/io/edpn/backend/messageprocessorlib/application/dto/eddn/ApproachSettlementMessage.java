@@ -21,7 +21,7 @@ public interface ApproachSettlementMessage {
 
         public record Payload(
                 @JsonProperty("SystemAddress") long systemAddress,
-                @JsonProperty("StarSystem")String starSystem,
+                @JsonProperty("StarSystem") String starSystem,
                 @JsonProperty("StarPos") double[] starPos,
                 @JsonProperty("MarketID") long marketId,
                 @JsonProperty("horizons") boolean horizons,
@@ -31,7 +31,13 @@ public interface ApproachSettlementMessage {
                 @JsonProperty("Name") String name,
                 @JsonProperty("Latitude") long latitude,
                 @JsonProperty("Longitude") long longitude,
-                @JsonProperty("timestamp") String timestamp
+                @JsonProperty("timestamp") String timestamp,
+                @JsonProperty("StationGovernment") String stationGovernment,
+                @JsonProperty("StationAllegiance") String stationAllegiance,
+                @JsonProperty("StationEconomies") Economy[] stationEconomies,
+                @JsonProperty("StationFaction") Faction stationFaction,
+                @JsonProperty("StationServices") String[] stationServices,
+                @JsonProperty("StationEconomy") String stationEconomy
         ) implements EddnMessage.Payload {
 
             @JsonProperty(value = "event", access = JsonProperty.Access.READ_ONLY)
