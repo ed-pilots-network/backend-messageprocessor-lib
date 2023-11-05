@@ -55,7 +55,7 @@ public interface ScanMessage {
                 @JsonProperty("MeanAnomaly") Double meanAnomaly,
                 @JsonProperty("OrbitalInclination") Double orbitalInclination,
                 @JsonProperty("OrbitalPeriod") Double orbitalPeriod,
-                //TODO @JsonProperty("Parents") @JsonIgnore List<Map<String, Integer>> parents,
+                @JsonProperty("Parents") List<Map<String, Integer>> parents,
                 @JsonProperty("Periapsis") Double periapsis,
                 @JsonProperty("PlanetClass") String planetClass,
                 @JsonProperty("Rings") List<Ring> rings,
