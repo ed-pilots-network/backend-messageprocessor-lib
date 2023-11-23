@@ -1,0 +1,76 @@
+{
+  "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+  "header": {
+    "gamebuild": "r297330/r0 ",
+    "gameversion": "4.0.0.1700",
+    "gatewayTimestamp": "2023-11-23T21:03:05.437533Z",
+    "softwareName": "EDDiscovery",
+    "softwareVersion": "16.2.0.0",
+    "uploaderID": "dc3a5631449d834e7223fd89a8f780777d0f9c38"
+  },
+  "message": {
+    "DistFromStarLS": 358.072575,
+    "LandingPads": {
+      "Large": 7,
+      "Medium": 12,
+      "Small": 6
+    },
+    "MarketID": 3221477376,
+    "StarPos": [
+      -69.46875,
+      -47.0,
+      -50.03125
+    ],
+    "StarSystem": "Wonorne Nu",
+    "StationEconomies": [
+      {
+        "Name": "$economy_Agri;",
+        "Proportion": 1.0
+      }
+    ],
+    "StationEconomy": "$economy_Agri;",
+    "StationFaction": {
+      "Name": "Brotherhood of Terra Mater"
+    },
+    "StationGovernment": "$government_Anarchy;",
+    "StationName": "Nowak Hub",
+    "StationServices": [
+      "dock",
+      "autodock",
+      "blackmarket",
+      "commodities",
+      "contacts",
+      "exploration",
+      "missions",
+      "outfitting",
+      "crewlounge",
+      "rearm",
+      "refuel",
+      "repair",
+      "shipyard",
+      "tuning",
+      "engineer",
+      "missionsgenerated",
+      "facilitator",
+      "flightcontroller",
+      "stationoperations",
+      "powerplay",
+      "stationMenu",
+      "shop",
+      "livery",
+      "socialspace",
+      "bartender",
+      "vistagenomics",
+      "pioneersupplies",
+      "apexinterstellar",
+      "frontlinesolutions"
+    ],
+    "StationType": "Coriolis",
+    "SystemAddress": 3657131070154,
+    "Taxi": true,
+    "event": "Docked",
+    "horizons": true,
+    "odyssey": true,
+    "timestamp": "2023-11-23T21:03:02Z"
+  }
+}

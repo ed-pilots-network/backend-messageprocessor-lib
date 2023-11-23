@@ -1,0 +1,63 @@
+{
+  "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+  "header": {
+    "gamebuild": "r297330/r0 ",
+    "gameversion": "4.0.0.1700",
+    "gatewayTimestamp": "2023-11-23T21:03:02.051545Z",
+    "softwareName": "E:D Market Connector [Windows]",
+    "softwareVersion": "5.9.5",
+    "uploaderID": "e93fbce0913034a21fd5276aaaf8d890ea50d453"
+  },
+  "message": {
+    "DistFromStarLS": 0.0,
+    "LandingPads": {
+      "Large": 8,
+      "Medium": 4,
+      "Small": 4
+    },
+    "MarketID": 3703076608,
+    "Multicrew": false,
+    "StarPos": [
+      -6.03125,
+      -30.375,
+      -59.03125
+    ],
+    "StarSystem": "Fujin",
+    "StationEconomies": [
+      {
+        "Name": "$economy_Carrier;",
+        "Proportion": 1.0
+      }
+    ],
+    "StationEconomy": "$economy_Carrier;",
+    "StationFaction": {
+      "Name": "FleetCarrier"
+    },
+    "StationGovernment": "$government_Carrier;",
+    "StationName": "T2B-GTY",
+    "StationServices": [
+      "dock",
+      "autodock",
+      "commodities",
+      "contacts",
+      "crewlounge",
+      "rearm",
+      "refuel",
+      "repair",
+      "engineer",
+      "flightcontroller",
+      "stationoperations",
+      "stationMenu",
+      "carriermanagement",
+      "carrierfuel",
+      "socialspace"
+    ],
+    "StationType": "FleetCarrier",
+    "SystemAddress": 3068494072163,
+    "Taxi": false,
+    "event": "Docked",
+    "horizons": true,
+    "odyssey": true,
+    "timestamp": "2023-11-23T21:03:00Z"
+  }
+}

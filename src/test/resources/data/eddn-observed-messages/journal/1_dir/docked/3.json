@@ -1,0 +1,66 @@
+{
+  "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+  "header": {
+    "gamebuild": "r297330/r0 ",
+    "gameversion": "4.0.0.1700",
+    "gatewayTimestamp": "2023-11-23T21:02:53.351460Z",
+    "softwareName": "EDO Materials Helper",
+    "softwareVersion": "2.44",
+    "uploaderID": "37bcdf85deeb91c7e3bac76bfd1d7779845f7cf3"
+  },
+  "message": {
+    "DistFromStarLS": 18.709711,
+    "LandingPads": {
+      "Large": 8,
+      "Medium": 4,
+      "Small": 4
+    },
+    "MarketID": 3708440320,
+    "StarPos": [
+      -43.375,
+      1.0,
+      -15.125
+    ],
+    "StarSystem": "LFT 1748",
+    "StationEconomies": [
+      {
+        "Name": "$economy_Carrier;",
+        "Proportion": 1.0
+      }
+    ],
+    "StationEconomy": "$economy_Carrier;",
+    "StationFaction": {
+      "Name": "FleetCarrier"
+    },
+    "StationGovernment": "$government_Carrier;",
+    "StationName": "TBB-0TJ",
+    "StationServices": [
+      "dock",
+      "autodock",
+      "commodities",
+      "contacts",
+      "exploration",
+      "crewlounge",
+      "rearm",
+      "refuel",
+      "repair",
+      "engineer",
+      "flightcontroller",
+      "stationoperations",
+      "stationMenu",
+      "carriermanagement",
+      "carrierfuel",
+      "voucherredemption",
+      "socialspace",
+      "bartender",
+      "vistagenomics",
+      "pioneersupplies"
+    ],
+    "StationType": "FleetCarrier",
+    "SystemAddress": 22660650182049,
+    "event": "Docked",
+    "horizons": true,
+    "odyssey": true,
+    "timestamp": "2023-11-23T21:02:36Z"
+  }
+}
