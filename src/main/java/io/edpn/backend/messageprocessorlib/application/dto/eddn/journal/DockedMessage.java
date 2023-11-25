@@ -28,7 +28,7 @@ public interface DockedMessage {
                 @JsonProperty("DistFromStarLS") Double distanceFromStar,
                 @JsonProperty("LandingPads") LandingPads landingPads,
                 @JsonProperty("MarketID") Long marketId,
-                @JsonProperty("StarPos") List<Double> starPosition,
+                @JsonProperty("StarPos") Double[] starPosition,
                 @JsonProperty("StarSystem") String starSystem,
                 @JsonProperty("StationEconomies") List<Economy> stationEconomies,
                 @JsonProperty("StationEconomy") String stationEconomy,
