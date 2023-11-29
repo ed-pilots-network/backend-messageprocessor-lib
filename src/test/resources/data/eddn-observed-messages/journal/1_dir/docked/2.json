@@ -1,0 +1,78 @@
+{
+  "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+  "header": {
+    "gamebuild": "r297330/r0 ",
+    "gameversion": "4.0.0.1700",
+    "gatewayTimestamp": "2023-11-23T21:02:52.929362Z",
+    "softwareName": "E:D Market Connector [Windows]",
+    "softwareVersion": "5.9.5",
+    "uploaderID": "5e1b20dfcdcd52d9ab5275c04d4413770874e220"
+  },
+  "message": {
+    "DistFromStarLS": 8924.504273,
+    "LandingPads": {
+      "Large": 6,
+      "Medium": 12,
+      "Small": 7
+    },
+    "MarketID": 3226769408,
+    "Multicrew": false,
+    "StarPos": [
+      -68.59375,
+      -7.03125,
+      49.6875
+    ],
+    "StarSystem": "Chimba",
+    "StationAllegiance": "Federation",
+    "StationEconomies": [
+      {
+        "Name": "$economy_Refinery;",
+        "Proportion": 1.0
+      }
+    ],
+    "StationEconomy": "$economy_Refinery;",
+    "StationFaction": {
+      "FactionState": "CivilWar",
+      "Name": "Chimba Public Industries"
+    },
+    "StationGovernment": "$government_Corporate;",
+    "StationName": "Hurley Port",
+    "StationServices": [
+      "dock",
+      "autodock",
+      "commodities",
+      "contacts",
+      "exploration",
+      "missions",
+      "outfitting",
+      "crewlounge",
+      "rearm",
+      "refuel",
+      "repair",
+      "shipyard",
+      "tuning",
+      "engineer",
+      "missionsgenerated",
+      "flightcontroller",
+      "stationoperations",
+      "powerplay",
+      "searchrescue",
+      "stationMenu",
+      "shop",
+      "livery",
+      "socialspace",
+      "bartender",
+      "vistagenomics",
+      "pioneersupplies",
+      "apexinterstellar",
+      "frontlinesolutions"
+    ],
+    "StationType": "Orbis",
+    "SystemAddress": 7266950456761,
+    "Taxi": false,
+    "event": "Docked",
+    "horizons": true,
+    "odyssey": true,
+    "timestamp": "2023-11-23T21:02:52Z"
+  }
+}

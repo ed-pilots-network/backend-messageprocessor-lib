@@ -1,0 +1,70 @@
+{
+  "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+  "header": {
+    "gamebuild": "r297330/r0 ",
+    "gameversion": "4.0.0.1700",
+    "gatewayTimestamp": "2023-11-23T21:02:52.541242Z",
+    "softwareName": "EDDiscovery",
+    "softwareVersion": "16.2.0.0",
+    "uploaderID": "a363c3d9ac662a48937942bff76d2d476ec76371"
+  },
+  "message": {
+    "DistFromStarLS": 829.334255,
+    "LandingPads": {
+      "Large": 0,
+      "Medium": 1,
+      "Small": 4
+    },
+    "MarketID": 3229466880,
+    "StarPos": [
+      61.28125,
+      115.875,
+      -0.5625
+    ],
+    "StarSystem": "Kungkalenja",
+    "StationEconomies": [
+      {
+        "Name": "$economy_Industrial;",
+        "Proportion": 1.0
+      }
+    ],
+    "StationEconomy": "$economy_Industrial;",
+    "StationFaction": {
+      "Name": "Kungkalenja Silver Federal Ltd"
+    },
+    "StationGovernment": "$government_Corporate;",
+    "StationName": "Piaget Hub",
+    "StationServices": [
+      "dock",
+      "autodock",
+      "commodities",
+      "contacts",
+      "exploration",
+      "missions",
+      "outfitting",
+      "crewlounge",
+      "rearm",
+      "refuel",
+      "engineer",
+      "missionsgenerated",
+      "facilitator",
+      "flightcontroller",
+      "stationoperations",
+      "powerplay",
+      "searchrescue",
+      "stationMenu",
+      "livery",
+      "socialspace",
+      "bartender",
+      "pioneersupplies",
+      "apexinterstellar"
+    ],
+    "StationType": "Outpost",
+    "SystemAddress": 2870783452585,
+    "Taxi": false,
+    "event": "Docked",
+    "horizons": true,
+    "odyssey": true,
+    "timestamp": "2023-11-23T21:02:47Z"
+  }
+}

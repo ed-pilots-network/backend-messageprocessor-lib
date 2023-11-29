@@ -1,0 +1,76 @@
+{
+  "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+  "header": {
+    "gamebuild": "r297330/r0 ",
+    "gameversion": "4.0.0.1700",
+    "gatewayTimestamp": "2023-11-23T21:04:49.225229Z",
+    "softwareName": "E:D Market Connector [Windows]",
+    "softwareVersion": "5.9.5",
+    "uploaderID": "5d61041283d1bed0761bce4834c31aff132b5b28"
+  },
+  "message": {
+    "DistFromStarLS": 7.459047,
+    "LandingPads": {
+      "Large": 0,
+      "Medium": 1,
+      "Small": 2
+    },
+    "MarketID": 3227575040,
+    "Multicrew": false,
+    "StarPos": [
+      27.875,
+      -19.4375,
+      -149.625
+    ],
+    "StarSystem": "Koljak",
+    "StationEconomies": [
+      {
+        "Name": "$economy_Extraction;",
+        "Proportion": 0.83
+      },
+      {
+        "Name": "$economy_Refinery;",
+        "Proportion": 0.17
+      }
+    ],
+    "StationEconomy": "$economy_Extraction;",
+    "StationFaction": {
+      "FactionState": "Boom",
+      "Name": "THE AZGHARIE"
+    },
+    "StationGovernment": "$government_Democracy;",
+    "StationName": "Clayton Survey",
+    "StationServices": [
+      "dock",
+      "autodock",
+      "blackmarket",
+      "commodities",
+      "contacts",
+      "exploration",
+      "missions",
+      "outfitting",
+      "crewlounge",
+      "rearm",
+      "refuel",
+      "engineer",
+      "missionsgenerated",
+      "flightcontroller",
+      "stationoperations",
+      "powerplay",
+      "searchrescue",
+      "stationMenu",
+      "livery",
+      "socialspace",
+      "bartender",
+      "pioneersupplies",
+      "apexinterstellar"
+    ],
+    "StationType": "Outpost",
+    "SystemAddress": 2870246122857,
+    "Taxi": false,
+    "event": "Docked",
+    "horizons": true,
+    "odyssey": true,
+    "timestamp": "2023-11-23T21:04:48Z"
+  }
+}
