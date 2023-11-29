@@ -39,7 +39,6 @@ public interface DockedMessage {
                 @JsonProperty("StationType") String stationType,
                 @JsonProperty("SystemAddress") Long systemAddress,
                 @JsonProperty("Taxi") Boolean taxi,
-                @JsonProperty("event") String event,
                 @JsonProperty("horizons") Boolean horizons,
                 @JsonProperty("odyssey") Boolean odyssey,
                 @JsonProperty("timestamp") String timestamp
