@@ -1,5 +1,6 @@
 package io.edpn.backend.messageprocessorlib.application.dto.eddn;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.edpn.backend.util.TimestampConverter;
 import java.time.LocalDateTime;
@@ -16,7 +17,8 @@ public interface CommodityMessage {
         public LocalDateTime messageTimeStamp() {
             return TimestampConverter.convertToLocalDateTime(message.timestamp());
         }
-
+        
+        @JsonIgnoreProperties(ignoreUnknown = true)
         public record Payload(
                 @JsonProperty("systemName") String systemName,
                 @JsonProperty("stationName") String stationName,
