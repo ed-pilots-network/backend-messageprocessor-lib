@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'io.edpn.backend'
-version = '0.0.5-SNAPSHOT'
+version = '0.0.6-SNAPSHOT'
 compileJava.options.encoding = 'UTF-8'
 
 java {
@@ -32,7 +32,7 @@ repositories {
 }
 
 ext {
-    backendUtilVersion = '0.0.4-SNAPSHOT'
+    backendUtilVersion = '0.0.3-SNAPSHOT'
     jacksonVersion = '2.14.2'
     junitJupiterVersion = "5.9.3"
 }
