@@ -20,6 +20,7 @@ public interface CommodityMessage {
         public record Payload(
                 @JsonProperty("systemName") String systemName,
                 @JsonProperty("stationName") String stationName,
+                @JsonProperty("carrierDockingAccess") String carrierDockingAccess,
                 @JsonProperty("stationType") String stationType,
                 @JsonProperty("marketId") long marketId,
                 @JsonProperty("horizons") boolean horizons,
